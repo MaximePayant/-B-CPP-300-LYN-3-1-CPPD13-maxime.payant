@@ -33,6 +33,7 @@ Toy& Toy::operator=(const Toy& toy)
     m_name = toy.m_name;
     m_type = toy.m_type;
     m_picture = toy.m_picture;
+    return (*this);
 }
 
 const std::string& Toy::getAscii() const

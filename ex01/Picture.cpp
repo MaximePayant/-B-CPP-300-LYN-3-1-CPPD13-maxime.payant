@@ -39,6 +39,7 @@ Picture::~Picture()
 Picture& Picture::operator=(const Picture& picture)
 {
     m_data = picture.m_data;
+    return (*this);
 }
 
 bool Picture::getPictureFromFile(const std::string &file)
