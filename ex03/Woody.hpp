@@ -17,6 +17,8 @@ class Woody :
     public:
         Woody(const std::string& name, const std::string& filename = "woody.txt");
 
+        void speak(const std::string& statement) const override;
+
 };
 
 #endif // WOODY_HPP

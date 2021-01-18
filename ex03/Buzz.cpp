@@ -10,3 +10,8 @@
 Buzz::Buzz(const std::string& name, const std::string& filename) :
 Toy(BUZZ, name, filename)
 {}
+
+void Buzz::speak(const std::string& statement) const
+{
+    std::cout << "BUZZ: " << m_name << " \"" << statement << "\"" << std::endl;
+}

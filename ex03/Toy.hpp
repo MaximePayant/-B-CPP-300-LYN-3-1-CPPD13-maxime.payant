@@ -27,6 +27,8 @@ class Toy
         void setName(const std::string& name) { m_name = name;   };
         bool setAscii(const std::string& filename);
 
+        virtual void speak(const std::string& statement) const;
+
     protected:
         std::string m_name;
         ToyType m_type;
