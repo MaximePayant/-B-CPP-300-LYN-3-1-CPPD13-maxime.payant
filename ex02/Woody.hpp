@@ -20,11 +20,4 @@ class Woody :
 
 };
 
-Woody::Woody(const std::string& name, const std::string& filename) :
-Toy(WOODY, name, filename)
-{}
-
-Woody::~Woody()
-{}
-
 #endif // WOODY_HPP

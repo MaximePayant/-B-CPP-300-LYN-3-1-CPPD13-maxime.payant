@@ -20,11 +20,4 @@ class Buzz :
 
 };
 
-Buzz::Buzz(const std::string& name, const std::string& filename = "woody.txt") :
-Toy(BUZZ, name, filename)
-{}
-
-Buzz::~Buzz()
-{}
-
 #endif // __BUZZ_H__
