@@ -15,7 +15,7 @@ class Buzz :
 {
 
     public:
-        Buzz(const std::string& name, const std::string& filename = "woody.txt");
+        Buzz(const std::string& name, const std::string& filename = "buzz.txt");
 
         void speak(const std::string& statement) const override;
 
