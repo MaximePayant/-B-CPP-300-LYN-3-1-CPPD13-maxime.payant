@@ -15,10 +15,9 @@
 class Picture
 {
 
-    private:
+    public:
         std::string m_data;
 
-    public:
         Picture();
         Picture(const std::string &file);
         ~Picture();
