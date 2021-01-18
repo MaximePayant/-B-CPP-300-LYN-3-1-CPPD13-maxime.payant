@@ -19,11 +19,13 @@ class Picture
         std::string m_data;
 
         Picture();
+        Picture(const Picture& copy);
         Picture(const std::string &file);
         ~Picture();
 
         bool getPictureFromFile(const std::string &file);
         const std::string& getAscii() const;
+        Picture& operator=(const Picture& picture);
 
 };
 
