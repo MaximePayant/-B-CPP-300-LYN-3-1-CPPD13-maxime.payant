@@ -16,7 +16,6 @@ Picture::Picture(const std::string &file)
     std::ifstream fileStream(file);
     std::stringstream buffer;
 
-    printf("Create with <%s> filename\n", file.c_str());
     if (file.empty())
         m_data = "";
     else if (fileStream) {
