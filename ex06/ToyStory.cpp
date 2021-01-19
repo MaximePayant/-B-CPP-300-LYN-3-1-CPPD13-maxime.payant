@@ -37,12 +37,15 @@ void ToyStory::tellMeAStory(const std::string& filename
     std::ifstream file(filename);
     std::string buffer;
 
+    if (!file) {
+        std::cout << "Bad Story" << std::endl;
+        return;
+    }
     std::cout << toy1.getAscii() << std::endl
               << toy2.getAscii() << std::endl;
-    if (file)
+    if (file) {
         for (bool one = true; std::getline(file, buffer); one = !one)
             if (!(one ? dispDialog(toy1, func1, buffer) : dispDialog(toy2, func2, buffer)))
                 break;
-    else
-        std::cout << "Bad Story" << std::endl;
+    }
 }
